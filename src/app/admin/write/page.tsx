@@ -126,9 +126,9 @@ export default function WritePage() {
 	const generateTableOfContents = (content: string) => {
 		const headingRegex = /^(#{1,6})\s+(.+)$/gm;
 		const toc = [];
-		let match: RegExpExecArray | null;
+		let match: RegExpExecArray | null = headingRegex.exec(content);
 
-		while ((match = headingRegex.exec(content)) !== null) {
+		while (match !== null) {
 			const level = match[1].length;
 			const text = match[2].trim();
 			const id = text.toLowerCase().replace(/[^a-z0-9가-힣]/g, '-').replace(/-+/g, '-').replace(/^-|-$/g, '');
@@ -138,6 +138,7 @@ export default function WritePage() {
 				text,
 				id
 			});
+			match = headingRegex.exec(content);
 		}
 
 		return toc;

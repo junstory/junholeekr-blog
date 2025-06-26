@@ -1,12 +1,24 @@
 {
   "posts": {
     "zztest": {
-      "views": 4,
-      "lastViewed": "2025-06-26T04:40:42.967Z"
+      "views": 6,
+      "lastViewed": "2025-06-26T05:41:32.469Z"
     },
     "ztest": {
       "views": 2,
       "lastViewed": "2025-06-26T04:40:45.899Z"
+    },
+    "test-1": {
+      "views": 2,
+      "lastViewed": "2025-06-26T05:26:09.266Z"
+    },
+    "hello-nextjs": {
+      "views": 2,
+      "lastViewed": "2025-06-26T05:42:41.063Z"
+    },
+    "what-is-ssg": {
+      "views": 2,
+      "lastViewed": "2025-06-26T05:42:46.998Z"
     }
   }
 }

@@ -58,6 +58,7 @@ export default async function PostPage({ params }: Props) {
 					<main className="lg:col-span-3">
 						<div 
 							className="prose prose-lg max-w-none prose-headings:text-gray-900 prose-p:text-gray-700 prose-a:text-blue-600 prose-strong:text-gray-900"
+							// biome-ignore lint/security/noDangerouslySetInnerHtml: <explanation>
 							dangerouslySetInnerHTML={{ __html: postData.contentHtml || '' }}
 						/>
 					</main>
