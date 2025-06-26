@@ -1,0 +1,35 @@
+{
+  "name": "junholeekr-main",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev --turbopack",
+    "build": "next build",
+    "start": "next start",
+    "lint": "npx @biomejs/biome lint ./src",
+    "format": "npx @biomejs/biome format --write ./src",
+    "check": "npx @biomejs/biome check --write ./src"
+  },
+  "dependencies": {
+    "@uiw/react-md-editor": "^4.0.7",
+    "gray-matter": "^4.0.3",
+    "jose": "^6.0.11",
+    "next": "15.3.4",
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0",
+    "remark": "^15.0.1",
+    "remark-html": "^16.0.1",
+    "slugify": "^1.6.6"
+  },
+  "devDependencies": {
+    "@biomejs/biome": "2.0.5",
+    "@tailwindcss/postcss": "^4",
+    "@tailwindcss/typography": "^0.5.16",
+    "@types/node": "^20",
+    "@types/react": "^19",
+    "@types/react-dom": "^19",
+    "autoprefixer": "^10.4.21",
+    "tailwindcss": "^4",
+    "typescript": "^5"
+  }
+}
